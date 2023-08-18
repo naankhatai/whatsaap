@@ -1,15 +1,183 @@
+let contacts=[  {   name:'Ankit (You)',
+title:'massage yourself',
+dp:'https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4'},
+{   name:'IT Placement 2025',
+title:'click for more info',
+dp:'dps/Screenshot 2023-08-03 151421.png'},
+{   name:'IT &nbsp; B &nbsp;2021-2025',
+title:'click for more info',
+dp:'dps/Screenshot 2023-08-03 151605.png'},
+{   name:'Bhai&#10084;&#65039;',
+title:'',
+dp:'https://pps.whatsapp.net/v/t61.24694-24/362294007_1840555306346498_3381802106732353945_n.jpg?ccb=11-4&oh=01_AdRv7mOLhU7TCY22BlwJAgHvqLqoD6S1REx8cMVg3elTZA&oe=64E99DA5'},
+{   name:'Talk about scholarship',
+title:'click for more info',
+dp:'dps/Screenshot 2023-08-03 151516.png'},
+{   name:'Group ka naam',
+title:'chunni bhai,Lakshman,you',
+dp:'dps/Screenshot 2023-08-11 010241.png'},
+{   name:'vijju',
+title:'',
+dp:'dps/Screenshot 2023-08-04 120434.png'},
+ {   name:'shivam bhaiya',
+title:'',
+dp:'dps/Screenshot 2023-08-04 122501.png'},
+{   name:'Lakshman',
+title:'',
+dp:'dps/Screenshot 2023-08-03 152711.png'},
+{   name:'Ayush cs',
+title:'',
+dp:'dps/Screenshot 2023-08-03 152729.png'},
+{   name:'&#128293;SYSTEM&#128293;',
+title:'click for more info',
+dp:'dps/Screenshot 2023-08-03 152215.png'},
 
-let el_up = document.getElementsByClassName("general-chat");
-let el_down = document.getElementsByClassName("general-chat");
-// let str = "Click on button to change the background color";
-         
-// el_up.innerHTML = str;
-         
-function changeColor(color) {
-    document.body.style.background = color;
+
+
+];
+
+
+
+let previousClickedId = null;
+
+function handleDivClick(clickedId) {
+    console.log(clickedId);
+    
+    const id = clickedId.replace('c', '');
+
+    const previouschat = document.getElementById(previousClickedId);
+    const sourceDiv = document.getElementById(clickedId);
+
+    const chatname = document.querySelector('#CHAT-CONTENT-NAME');
+    const chatdiscription = document.querySelector('#CHAT-CONTENT-NAME-ABOUT');
+    const targetImage = document.querySelector('#right-chat-dp');
+
+    targetImage.src = contacts[id - 1].dp;
+    chatname.innerHTML = contacts[id - 1].name;
+    chatdiscription.innerHTML = contacts[id - 1].title;
+
+    if (previousClickedId !== null) {
+        previouschat.classList.remove('clicked');
+    }
+
+    sourceDiv.classList.add('clicked');
+
+    previousClickedId = clickedId;
 }
+
+let source=document.querySelector('#main-dp');
+
+let leftArrow=document.querySelector('#left-arrow');
+
+let bigDp=document.querySelector('#big-dp');
+
+let accdp=document.querySelector('#ACCOUNT-DP');
+
+let arrProfile=document.querySelector('#arrowProfile');
+
+let All= document.querySelector('#all');
+
+source.addEventListener("click", myFunction);
+
+function myFunction() {
+  accdp.style.transform = "translateX(0%)";
+  bigDp.style.transform='scale(1)';
+  bigDp.style.transition = ' 200ms ease-out 300ms';
+  accdp.style.transition = ' cubic-bezier(.52,.56,.69,.98) 300ms';
+  arrProfile.style.transition = ' 200ms ease-out 300ms';
+  arrProfile.style.transform="translateX(0%)";
+  arrProfile.style.opacity="1";
+  All.style.opacity="1";
+  All.style.transition= ' 500ms ease-out 300ms';
+  All.style.transform="translateX(0%)";
+}
+
+leftArrow.addEventListener('click',back);
+
+function back(){
+        arrProfile.style.transition = ' ease-out 600ms';
+        arrProfile.style.opacity="0";
+        arrProfile.style.transform="translateX(-60%)";
+        accdp.style.transform = "translateX(-100%)";
+        bigDp.style.transform='scale(0)';
+        bigDp.style.transition = ' ease-out 500ms';
+        accdp.style.transition = ' ease-out 200ms';
+        All.style.opacity="0";
+        All.style.transition= ' ease-out 500ms';
+        All.style.transform="translateY(-30%)";
+
+
+}
+
+
+
+const clickableDiv = document.getElementById('clickableDiv');
+const menu = document.getElementById('menu');
+let clickCount = 0;
+
+clickableDiv.addEventListener('click', (event) => {
+  clickCount++;
+
+  if (clickCount === 1 || clickCount % 2 === 0) {
+    menu.style.display = 'block';
+  
+  }
+  
+  else {
+   
+    menu.style.display = 'none';
+    
+  }
+
+  
+});
+
+
+// Hide the menu when clicking outside of it
+document.addEventListener('click', (event) => {
+  if (!menu.contains(event.target) && event.target !== clickableDiv) {
+    menu.style.display = 'none';
+    
+  }
+});
+
+
+const VIEEW=document.querySelector('#VIEW');
+const photo=document.querySelector('#view-photo');
+const vImage=document.querySelector('.photo-section-image');
+const pSection=document.querySelector('.photo-section');
+
+
+VIEEW.addEventListener('click', (event) => {
+  photo.style.transition = '  ease-in-out 300ms';
+  // All.style.transform="translateY(-30%)";
  
-function gfg_Run() {
-    changeColor('yellow');
-    el_down.innerHTML = "Background Color changed";
-}    
+  photo.style.zIndex='3';
+  
+  
+});
+
+photo.addEventListener('click', (event) => {
+  
+  
+  // pSection.style.transform="translateY(-10%)";
+  // pSection.style.transform="translateX(-70%)";
+  // vImage.style.transform="translatey(-30%)";
+  photo.style.transition = '  ease-in-out 300ms';
+  // vImage.style.transition = 'cubic-bezier(.41,.07,.7,.7) 1s';
+  // pSection.style.transition = 'cubic-bezier(.41,.07,.7,.7) 700ms';
+  photo.style.zIndex='-3';
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+

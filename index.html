@@ -9,18 +9,45 @@
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="index.js"></script>
+    <!-- <script defer src="index.js"></script> -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" /> -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
   </head>
   <body>
     <div class="wrapper">
 
+      <div id="view-photo">
+
+        <div class="top-bar">
+          <div class="Left">
+          <div class="icoN" >
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4" alt="" class="icon-image " >
+          </div>
+
+          <h2>Ankit</h2>
+        </div>
+
+        <i class="fa fa-close" style="font-size :20px; font-weight: lighter;"></i>
+
+
+        </div>
+
+
+        <div class="photo-section">
+          <img src="https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4" alt="" class="photo-section-image">
+        </div>
+      </div>
+
+
+
+
       <div class="container">
+
+        <div class="CONTAIN-LEFT">
 
         <div class="general-nav" id="gnav">
 
@@ -28,8 +55,8 @@
 
           <div class="general-nav-content">
 
-            <div class="icoN">
-                    <img src="Screenshot 2023-08-01 233926.png" alt="" class="icon-image ">
+            <div class="icoN" id="main-dp">
+                    <img src="https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4" alt="" class="icon-image " id="account-dp">
             </div>
 
             <div class="left-icons">
@@ -50,10 +77,12 @@
 
           </div>
         </div>
-        <div class="general-search" id="SEARCH">
+
+        <div class="general-search" id="SEARCH" >
+      
 
           <div class="input-icons">
-            <i class="material-symbols-outlined icon">search</i>
+            <i class="material-symbols-outlined icon1">search</i>
             <input class="input-field" type="text" title="Search input textbox" placeholder="Search or search new chat">
             </div>
             <div class="filter">
@@ -64,11 +93,12 @@
 
         </div>
 
+        
         <div class="generl" id="Genrel">
 
-         <div class="general-chat">
-            <div class="chat-dp">
-                <img src="Screenshot 2023-08-01 233926.png" alt="" class="chat-icon">
+         <div class="general-chat" id="c1" onclick="handleDivClick(this.id)">
+            <div class="chat-dp" >
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4" alt="" class="chat-icon" >
             </div>
             <div class="chat-content">
                 <div class="chat-name">
@@ -84,11 +114,19 @@
                
             </div>
 
+              <div class="expand-icon1">
+                <div><i class="fa fa-thumb-tack" style="font-size:20px; transform: rotate(28deg); color: rgb(128, 128, 128); "></i></div>
+                <div> <span class="material-symbols-outlined">
+                  expand_more
+                  </span></div>
+               </div>
+
          </div>
 
 
 
-         <div class="general-chat">
+         <div class="general-chat" id="c2" onclick="handleDivClick(this.id)">
+
           <div class="chat-dp">
            <img src="dps/Screenshot 2023-08-03 151421.png" alt="" class="chat-icon">
         </div>
@@ -99,28 +137,35 @@
                   
                 </p>
             </div>
+            <div class="expand-icon"><span class="material-symbols-outlined">
+              expand_more
+              </span></div>
            
         </div>
 
          </div>
-         <div class="general-chat">         
+         <div class="general-chat" id="c3" onclick="handleDivClick(this.id)">         
            <div class="chat-dp">
                 <img src="dps/Screenshot 2023-08-03 151605.png" alt="" class="chat-icon">
 
             </div>
             <div class="chat-content">
                 <div class="chat-name">
-                    <h3>IT &nbsp; &nbsp;2021-2025</h3>
+                    <h3>IT &nbsp; B &nbsp;2021-2025</h3>
                     <p>Amritansh: is it real ?
                       
                     </p>
                 </div>
                
             </div>
+
+            <div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
-         <div class="general-chat">        
+         <div class="general-chat" id="c4"  onclick="handleDivClick(this.id)">        
             <div class="chat-dp">
-              <img src="Screenshot 2023-08-01 233926.png" alt="" class="chat-icon">
+              <img src="https://pps.whatsapp.net/v/t61.24694-24/362294007_1840555306346498_3381802106732353945_n.jpg?ccb=11-4&oh=01_AdRv7mOLhU7TCY22BlwJAgHvqLqoD6S1REx8cMVg3elTZA&oe=64E99DA5" alt="" class="chat-icon">
             </div>
             <div class="chat-content">
                 <div class="chat-name">
@@ -132,8 +177,12 @@
                 </div>
                
             </div>
+<div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
-         <div class="general-chat">          <div class="chat-dp">
+         <div class="general-chat" id="c5" onclick="handleDivClick(this.id)">     
+               <div class="chat-dp">
                 <img src="dps/Screenshot 2023-08-03 151516.png" alt="" class="chat-icon">
             </div>
             <div class="chat-content">
@@ -144,11 +193,13 @@
                     </p>
                 </div>
                
-            </div>
+            </div><div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
-         <div class="general-chat">       
+         <div class="general-chat" id="c6" onclick="handleDivClick(this.id)">       
             <div class="chat-dp">
-                <img src="dps/Screenshot 2023-08-03 151536.png" alt="" class="chat-icon">
+                <img src="dps/Screenshot 2023-08-11 010241.png" alt="" class="chat-icon">
             </div>
             <div class="chat-content">
                 <div class="chat-name">
@@ -159,14 +210,19 @@
                 </div>
                
             </div>
+
+            <div class="expand-icon"><span class="material-symbols-outlined">
+              expand_more
+              </span></div>
 </div>
 
           
-         <div class="general-chat">       
+         <div class="general-chat" id="c7" onclick="handleDivClick(this.id)">       
           <div class="chat-dp">
               <img src="dps/Screenshot 2023-08-04 120434.png" alt="" class="chat-icon">
           </div>
           <div class="chat-content">
+
               <div class="chat-name">
                   <h3>vijjju</h3>
                   <p>le meri bhi chat laga de &#127773;
@@ -174,10 +230,12 @@
                   </p>
               </div>
              
-          </div>
+          </div><div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
 
-         <div class="general-chat">        
+         <div class="general-chat" id="c8" onclick="handleDivClick(this.id)">        
             <div class="chat-dp">
               <img src="dps/Screenshot 2023-08-04 122501.png" alt="" class="chat-icon"> 
             </div>
@@ -192,10 +250,12 @@
                       </div>
                 </div>
                
-            </div>
+            </div><div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
 
-         <div class="general-chat">        
+         <div class="general-chat" id="c9" onclick="handleDivClick(this.id)">        
             <div class="chat-dp">
               <img src="dps/Screenshot 2023-08-03 152711.png" alt="" class="chat-icon"> 
             </div>
@@ -207,9 +267,11 @@
                     </p>
                 </div>
                
-            </div>
+            </div><div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
-         <div class="general-chat">        
+         <div class="general-chat" id="c10" onclick="handleDivClick(this.id)">        
             <div class="chat-dp">
               <img src="dps/Screenshot 2023-08-03 152729.png" alt="" class="chat-icon"> 
             </div>
@@ -221,10 +283,12 @@
                     </p>
                 </div>
                
-            </div>
+            </div><div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
 </div>
          
-<div class="general-chat">        
+<div class="general-chat" id="c11" onclick="handleDivClick(this.id)">        
     <div class="chat-dp">
                 <img src="dps/Screenshot 2023-08-03 152215.png" alt="" class="chat-icon">
             </div>
@@ -237,24 +301,94 @@
                         </p>
                         <span class="span2">Ajaoo sallooo ?</span>
                       </div>
-                </div>
+                </div><div class="expand-icon"><span class="material-symbols-outlined">
+                expand_more
+                </span></div>
                
             </div>
 </div>
         </div>
 
+           <div id="ACCOUNT-DP">
+            <div class="GREEN-TAG">
+              <div id="arrowProfile">
+             <span class="material-symbols-outlined" id="left-arrow">
+              arrow_back
+              </span>
+              <h3>Profile </h3>
+            </div>
+            </div>
+              <div class="IMAGE-TAG" >
+                <div class="view-dp">
+         
+
+              <div id="menu">
+                <ul>
+                  <li id="VIEW">View photo</li>
+                  <li>Take photo</li>
+                  <li>Upload photo</li>
+                  <li>Remove photo</li>
+                </ul>
+              </div>
+                  
+                  <div class="hoverr"  id="clickableDiv"  >
+                    <i class="fa fa-camera" style="font-size:20px ; COLOR:WHITE"></i>
+                    <h3>CHANGE <br> PROFILE PHOTO</h3>
+                  </div>
+                  <img src="https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4" alt="" id="big-dp">
+                </div>
+              </div>
+
+
+                <div id="all">
+
+              <div class="NAME-TAG">
+                <p>Your name</p>
+                
+                <div class="name-contnet">
+                <h3>Ankit Sharma</h3>
+                <div class="edit"><i class="fa fa-pencil" style="font-size:20px; color: grey;"></i></div>
+              </div>
+
+              </div>
+              <div class="between-name-about">
+                <p>This is not your username or pin . this name will be visible to your Whatsapp contacts</p>
+              </div>
+              <div class="ABOUT">
+                <p>
+                  About
+                </p>
+                <div class="name-contnet">
+                  <h3>new day with new hope</h3>
+                  <div class="edit"><i class="fa fa-pencil" style="font-size:20px; color: grey;"></i></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+      </div>
+
+
+
+
+        <div class="CONTAIN-RIGHT">
+
         <div class="chat-nav" id="cnav">
 
           <div class="chat-nav-content" id="right-dp">
-            <img src="Screenshot 2023-08-01 233926.png" alt="" class="icon-image ">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/364431255_1042962256871563_7030856836677976378_n.jpg?ccb=11-4&oh=01_AdRd-a2yOPPtDFcWxJRLA6n9NvM_TUFYVybEsNw1tgdLcg&oe=64E9F9E4" alt="" class="icon-image " id="right-chat-dp">
 
           </div>
           <div class="chat-nav-content" id="name-of-chat">    
-              <h3>Ankit (you)</h3>
-              <p>Message yourself</p>
+              <h3 id="CHAT-CONTENT-NAME">Ankit (you)</h3>
+              <p id="CHAT-CONTENT-NAME-ABOUT">Message yourself</p>
 
           </div>
-          <div class="chat-nav-content" id="right-search"><i class="material-symbols-outlined icon">search</i></div>
+          <div class="chat-nav-content" id="right-search">
+            <i class="material-symbols-outlined icon">search</i>
+          
+          </div>
           <div class="chat-nav-content"><span class="material-symbols-outlined" title="Menu">
             more_vert
             </span></div>
@@ -280,7 +414,13 @@
             mic
             </span></div>
         </div>
+
+      </div>
+
+
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
