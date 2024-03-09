@@ -1,5 +1,5 @@
 let contacts=[  {   name:'Ankit (You)',
-title:'massage yourself',
+title:'message yourself',
 dp:'dps/Screenshot 2023-10-21 164615.png'},
 {   name:'IT Placement 2025',
 title:'click for more info',
@@ -27,7 +27,7 @@ title:'',
 dp:'dps/Screenshot 2023-08-03 152711.png'},
 {   name:'Ayush cs',
 title:'',
-dp:'dps/Screenshot 2023-08-03 152729.png'},
+dp:'dps/Screenshot 2023-08-03 151421.png'},
 {   name:'&#128293;SYSTEM&#128293;',
 title:'click for more info',
 dp:'dps/Screenshot 2023-08-03 152215.png'},
@@ -36,6 +36,36 @@ dp:'dps/Screenshot 2023-08-03 152215.png'},
 
 ];
 
+
+let chats=[
+  {m1:"Rice 2kg", 
+  me2:"Lunch box",
+  me3:"Wheat",
+  me3:"kaccha towel",
+  me3:"bgmi",
+  me3:"Red yellow",
+  me3:"9283842340",
+  me3:"going",
+  me3:"trouser",
+    },
+  
+];
+
+// let me= document.getElementById("c1");
+
+// me.addEventListener("onclick",e);
+
+// function e()
+// {
+//         let common=document.createElement("div");
+//         let itemm=document.createElement("div");
+//         let msgg=document.createElement("p");
+//         let timee=document.createElement("span");
+//         bigField.classList.add('commmon');
+//         msgg.classList.add('item');
+//         timee.classList.add('time2');
+
+// };
 
 
 let previousClickedId = null;
