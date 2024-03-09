@@ -1,6 +1,11 @@
 let contacts=[  {   name:'Ankit (You)',
+<<<<<<< HEAD
 title:'message yourself',
 dp:'dps/Screenshot 2023-10-21 164615.png'},
+=======
+title:'massage yourself',
+dp:'Screenshot 2023-10-21 164615.png'},
+>>>>>>> 6455dae127eae1265b8e0c6076cbee3e857e2f73
 {   name:'IT Placement 2025',
 title:'click for more info',
 dp:'dps/Screenshot 2023-08-03 151421.png'},
@@ -9,7 +14,7 @@ title:'click for more info',
 dp:'dps/Screenshot 2023-08-03 151605.png'},
 {   name:'Bhai&#10084;&#65039;',
 title:'',
-dp:'dps/Screenshot 2023-10-21 155523.png'},
+dp:'Screenshot 2023-10-21 155523.png'},
 {   name:'Talk about scholarship',
 title:'click for more info',
 dp:'dps/Screenshot 2023-08-03 151516.png'},
