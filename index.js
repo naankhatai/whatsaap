@@ -1,6 +1,6 @@
 let contacts=[  {   name:'Ankit (You)',
 title:'message yourself',
-dp:'dps/Screenshot 2023-10-21 164615.png'},
+dp:'Screenshot 2023-10-21 164615.png'},
 {   name:'IT Placement 2025',
 title:'click for more info',
 dp:'dps/Screenshot 2023-08-03 151421.png'},
